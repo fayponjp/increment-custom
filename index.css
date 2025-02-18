@@ -1,0 +1,57 @@
+body {
+    background: url("panel.jpg") no-repeat center;
+    background-size: 85%;
+    /* 
+        So scrollbar doesn't appear, subtract 100vh from the margin in .app.
+        I tried adding padding inside the body instead of having a margin in .app 
+        but it still shows a scrollbar
+    */
+    height: calc(100vh - 2em); 
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#increment-btn {
+    background: #ff4500;
+}
+
+#save-btn {
+    background: #7193ff;
+}
+
+.app {
+    max-height: 500px;
+    max-width: 800px;
+    display: block;
+    margin: 2em auto;
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: rgba(250, 196, 12, 0.9);
+}
