@@ -55,3 +55,10 @@ button {
     border-radius: 10px;
     background: rgba(250, 196, 12, 0.9);
 }
+
+.app__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+}
